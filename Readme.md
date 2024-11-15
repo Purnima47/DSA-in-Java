@@ -1,18 +1,18 @@
 ```
-├── Beginner Level
+├── 1. Beginner Level
 │   ├── Array + ArrayList
 │   ├── Basics + Strings + Functions
 |   ├── Linked List
 |   └── Stacks + Queues
 |
-├── Intermediate Level
+├── 2. Intermediate Level
 │   ├── Bit Manipulation + Hashing
 │   └── Trees + Graphs
 │   
-├── Advanced Level
+├── 3. Advanced Level
 |   ├── Dynamic Programming
 |   ├── Heaps + Tries
 |   └── Recursion + Backtracking
-├── OOPS Concepts
-└── Important Algorithms
+├── 4. OOPS Concepts
+└── 5. Important Algorithms
 ```
