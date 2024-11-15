@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.PriorityQueue;
 
 public class PrimsAlgo {
     static class Edge {
@@ -32,9 +33,48 @@ public class PrimsAlgo {
         graph[3].add(new Edge(3, 2, 50));
     }
 
+    static class Pair implements Comparable<Pair> {
+        int v;
+        int cost;
+
+        public Pair(int v, int cost) {
+            this.v = v;
+            this.cost = cost;
+        }
+
+        @Override
+        public int compareTo(Pair p2) {
+            // Ascending order sorting
+            return this.cost - p2.cost;
+        }
+    }
+
+    public static void prims(ArrayList<Edge> graph[]) {
+        boolean visited[] = new boolean[graph.length];
+        PriorityQueue<Pair> pq = new PriorityQueue<>();
+        pq.add(new Pair(0, 0));
+        int finalCost = 0;
+
+        while (!pq.isEmpty()) {
+            Pair curr = pq.remove();
+            if (!visited[curr.v]) {
+                visited[curr.v] = true;
+                finalCost += curr.cost;
+
+                for (int i = 0; i < graph[curr.v].size(); i++) {
+                    Edge e = graph[curr.v].get(i);
+                    pq.add(new Pair(e.dest, e.wt));
+                }
+            }
+        }
+
+        System.out.println("Final Cost of MST is: " + finalCost);
+    }
+
     public static void main(String[] args) {
         int V = 4;
         ArrayList<Edge> graph[] = new ArrayList[V];
         createGraph(graph);
+        prims(graph);
     }
 }
