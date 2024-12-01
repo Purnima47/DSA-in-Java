@@ -3,7 +3,8 @@
 │   ├── Array
 │   ├── 2D Array
 │   ├── Array List
-│   ├── Basics + Strings + Functions
+│   ├── Basics + Functions
+|   ├── Strings
 |   ├── Linked List
 |   └── Stacks + Queues
 |
