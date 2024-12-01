@@ -13,6 +13,9 @@ package TrappingRainWater;
  * 
  * 3. If we have bars in ascending or descending order of height then no water will be trapped.
  */
+
+//  waterLevel = minimum(maxLeftBoundary, maxRightBoundary)
+
 import java.util.*;
 
 public class TrappingRainwater {
