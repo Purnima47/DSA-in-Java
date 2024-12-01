@@ -1,6 +1,8 @@
 ```
 ├── 1. Beginner Level
-│   ├── Array + ArrayList
+│   ├── Array
+│   ├── 2D Array
+│   ├── Array List
 │   ├── Basics + Strings + Functions
 |   ├── Linked List
 |   └── Stacks + Queues
