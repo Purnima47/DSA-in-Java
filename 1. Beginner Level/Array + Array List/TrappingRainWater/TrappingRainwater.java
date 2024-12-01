@@ -1,4 +1,3 @@
-package TrappingRainWater;
 //AUXILIARY ARRAYS
 // (waterLevel - height/baseLevel) * width = trapped water for each pillar.
 
