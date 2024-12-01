@@ -1,4 +1,6 @@
-public class MaxSubSum3 {
+// KADANE'S ALGORITHM (Not for all negative elements of array).
+// Check "Solution" (bottom most) in Readme.md for all negative elements of arr. 
+public class _3MaxSumKadanesAlgorithm {
     public static void main(String[] args) {
         int arr[] = { 2, 4, 6, 8 };
         int currSum = 0;

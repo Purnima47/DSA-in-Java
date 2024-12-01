@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class MaxSub2 {
+public class _2MaxSub {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int arr[] = { 2, 4, 6, 8 };

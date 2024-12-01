@@ -1,6 +1,7 @@
 import java.io.*;
 
-public class MaxSub {
+// BRUTE FORCE --> O(n^3)
+public class _1MaxSub {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n;
