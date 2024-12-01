@@ -4,25 +4,26 @@ import java.io.InputStreamReader;
 
 public class SearchIn2DArr {
 
-    
+    public static boolean search2D(int matrix[][], int key) {
+        int row = 0, col = matrix[0].length - 1;
+        while (row < matrix.length && col >= 0) {
+            if (matrix[row][col] == key) {
+                System.out.println("Found key at (" + row + "," + col + ")");
+                return true;
+            } else if (key < matrix[row][col]) {
+                col--;
+            } else {
+                row++;
+            }
+        }
+        System.out.println("Key not found");
+        return false;
+    }
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int matrix[][] = new int[3][3];
-        int m = matrix.length, n = matrix[0].length;
-        System.out.println("Enter your elements");
-        // Input
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                matrix[i][j] = Integer.parseInt(br.readLine());
-            }
-        }
-
-        // Output
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.println();
-        }
+        int matrix[][] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        int key = 3;
+        System.out.println(search2D(matrix, key));
     }
 }
