@@ -1,5 +1,18 @@
-
+package TrappingRainWater;
 //AUXILIARY ARRAYS
+// (waterLevel - height/baseLevel) * width = trapped water for each pillar.
+
+// we have to find waterLevel
+
+// CASES -
+/*
+ * 1. Single Bar --> No water will be trapped
+ * 2. 2 Bars --> No water will be trapped
+ * 
+ * i.e. minimum bars will be three for water to be trapped.
+ * 
+ * 3. If we have bars in ascending or descending order of height then no water will be trapped.
+ */
 import java.util.*;
 
 public class TrappingRainwater {
