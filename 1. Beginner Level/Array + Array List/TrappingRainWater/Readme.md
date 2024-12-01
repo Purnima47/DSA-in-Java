@@ -64,7 +64,7 @@ ___
 
 1. Array
 2. Two Pointers
-3. Dynamic Programminh
+3. Dynamic Programming
 4. Stack
 5. Monotonic Stack
 
