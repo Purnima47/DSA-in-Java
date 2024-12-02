@@ -1,36 +1,6 @@
 public class Recursion {
-    public static boolean isSorted(int arr[], int i) {
-        if (i == arr.length - 1) {
-            return true;
-        }
-        if (arr[i] > arr[i + 1]) {
-            return false;
-        }
-
-        return isSorted(arr, i + 1);
-    }
-
-    public static int firstOcc(int arr[], int key, int i) {
-        if (i == arr.length)
-            return -1;
-
-        if (arr[i] == key) {
-            return i;
-        }
-
-        return firstOcc(arr, key, i + 1);
-    }
-
-    public static int lastOcuu(int a[], int key, int i) {
-        if (i == a.length)
-            return -1;
-
-        int isFound = lastOcuu(a, key, i + 1);
-        if (isFound == -1 && a[i] == key)
-            return i;
-
-        return isFound;
-    }
+    
+    
 
     public static int xtoPowern(int x, int n) {
         if (n == 0)
@@ -92,8 +62,6 @@ public class Recursion {
 
     public static void main(String[] args) {
         int arr[] = { 1, 2, 3, 4, 5 };
-        System.out.println(isSorted(arr, 0));
-        System.out.println(firstOcc(arr, 5, 0));
         int a[] = { 8, 3, 6, 9, 5, 10, 2, 5, 3 };
         tiling(5);
         String str = "purnimakesarwani";
