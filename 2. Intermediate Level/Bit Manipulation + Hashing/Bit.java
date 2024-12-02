@@ -1,15 +1,6 @@
 
 public class Bit {
-    public static void CountSetBit(int n) {
-        int count = 0;
-        while (n > 0) {
-            if ((n & 1) != 0) {
-                count++;
-            }
-            n = n >> 1;
-        }
-        System.out.println(count);
-    }
+    
 
     public static void Exponential(int a, int n) {
         int ans = 1;
@@ -64,7 +55,7 @@ public class Bit {
 
     public static void main(String[] args) {
         
-        CountSetBit(10);
+        
         Exponential(3, 5);
         ModularExponential(2, 5);
         UpperToLower();
