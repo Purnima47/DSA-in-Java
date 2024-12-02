@@ -1,19 +1,5 @@
 
 public class Bit {
-    
-
-    public static void Exponential(int a, int n) {
-        int ans = 1;
-        while (n > 0) {
-            if ((n & 1) != 0) { // if LSB is 1..
-                ans *= a;
-            }
-            a *= a;
-            n >>= 1;
-        }
-        System.out.println(ans);
-    }
-
     public static void ModularExponential(int a, int n) {
         int ans = 1;
         while (n > 0) {
@@ -54,9 +40,6 @@ public class Bit {
     }
 
     public static void main(String[] args) {
-        
-        
-        Exponential(3, 5);
         ModularExponential(2, 5);
         UpperToLower();
         LowerToUpper();
