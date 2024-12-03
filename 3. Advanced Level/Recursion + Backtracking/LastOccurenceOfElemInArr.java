@@ -11,7 +11,7 @@ public class LastOccurenceOfElemInArr {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 1, 2, 3, 4, 5 };
+        int arr[] = { 8, 3, 6, 9, 5, 10, 2, 5, 3 };
         System.out.println(lastOcuu(arr, 4, 0));
     }
 }
