@@ -1,4 +1,5 @@
 public class BinaryStringProblem {
+    // Ques --> Print all binary strings of size N without consecutive 1's.
     public static void binaryString(String str, int n, int last) {
         if (n == 0) {
             System.out.println(str);
