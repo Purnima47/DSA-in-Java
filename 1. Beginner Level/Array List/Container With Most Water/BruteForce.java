@@ -13,7 +13,6 @@ public class BruteForce {
         }
 
         return maxWater;
-
     }
     
     public static void main(String[] args) {
