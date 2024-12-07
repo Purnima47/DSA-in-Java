@@ -5,6 +5,8 @@ public class BruteForce {
         int maxWater = 0;
         for (int i = 0; i < height.size(); i++) {
             for (int j = i + 1; j < height.size(); j++) {
+                // Line 1 --> ith
+                // Line 2 --> jth
                 int ht = Math.min(height.get(i), height.get(j));
                 int wd = j - i;
                 int currentWater = ht * wd;
