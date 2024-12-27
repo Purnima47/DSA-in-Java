@@ -1,4 +1,4 @@
-public class _0_1KnapSackProblem {
+public class _3_01KnapSackProblem {
 
     public static int knapSackUsingRecursion(int val[], int wt[], int W, int n) {
         if (W == 0 || n == 0) {
