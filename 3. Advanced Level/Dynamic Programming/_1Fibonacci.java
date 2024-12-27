@@ -1,4 +1,14 @@
 public class _1Fibonacci {
+    /*
+     * DP Imp Ques-->
+     * 1) Fibonacci
+     * 2) 0-1 Knapsack
+     * 3) Unbounded Knapsack
+     * 4) LCS (Longest Common Subsequence)
+     * 5) Kadane's Algorithm (Arrays)
+     * 6) Catalan Number
+     * 7) DP on Grid (2D Arrays)
+     */
 
     /* RECURSION --> */
 
